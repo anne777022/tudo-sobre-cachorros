@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'cachorro';
+    src: url(fontes/sugar_cream/Sugar\ Cream.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor01:#BFBFBF;
+    --cor02:#04BFAD;
+    --cor03:#4EBFBF;
+    --cor04:#04BFBF;
+    --cor05:#223D40;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+header{
+    background-color: var(--cor04);
+    min-height: 140px;
+    padding: 20px;
+    
+}
+header > h1{
+    font-family: 'cachorro';
+    color: var(--cor05);
+    font-size: 4em;
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+nav{
+    padding: 20px;
+    background-color: var(--cor04);
+    
+}
+nav > a{
+    text-decoration: none;
+    font-size: 1em;
+    color: rgba(219, 216, 216, 0.911);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition-duration: .5s;
+    border-radius: 10px;
+}
+nav> a:hover{
+    background-color: var(--cor03);
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0px;
+    background-color: white;
+}
+h2{
+    text-align: center;
+    color: var(--cor05);
+    margin: 40px;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em; 
+}
+main img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 500px;
+    height: auto;
+    padding: 2px;
+    margin: 40px; 
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    
+  }
+
+  footer{
+    background-color: #04BFAD;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  span{
+    color: #223D40;
+  }
+  footer > a {
+       text-decoration: none;
+       color: #223D40;
+  }
+  footer > a:hover{
+        background-color: var(--cor03);
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 10px 10px solid white;
+  }
